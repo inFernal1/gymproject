@@ -1,0 +1,53 @@
+unit Unit4;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, jpeg, ExtCtrls, StdCtrls, Menus;
+
+type
+  TMainForm = class(TForm)
+    Label8: TLabel;
+    Image1: TImage;
+    MainMenu1: TMainMenu;
+    N1: TMenuItem;
+    N4: TMenuItem;
+    Panel1: TPanel;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    Image2: TImage;
+    StaticText1: TStaticText;
+    procedure Button2Click(Sender: TObject);
+    procedure N4Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  MainForm: TMainForm;
+
+implementation
+
+uses Unit1;
+
+{$R *.dfm}
+
+procedure TMainForm.Button2Click(Sender: TObject);
+begin
+Clients.Show;
+end;
+
+procedure TMainForm.N4Click(Sender: TObject);
+begin
+close;
+end;
+
+end.
