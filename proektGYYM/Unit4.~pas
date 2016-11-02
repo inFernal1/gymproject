@@ -24,6 +24,7 @@ type
     Image2: TImage;
     StaticText1: TStaticText;
     procedure Button2Click(Sender: TObject);
+    procedure N4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,6 +43,11 @@ uses Unit1;
 procedure TMainForm.Button2Click(Sender: TObject);
 begin
 Clients.Show;
+end;
+
+procedure TMainForm.N4Click(Sender: TObject);
+begin
+close;
 end;
 
 end.
